@@ -12,7 +12,7 @@ function Input(props) {
 function Button(props) {
   return (
     <button
-      className={`bg-white border-red-900 border-2 px-4 py-2 rounded-md font-playfair text-black ${props.className}`}
+      className={`bg-slate-100 border-red-900 border-2 px-4 py-2 rounded-md font-playfair text-black ${props.className}`}
       onClick={props.onClick}
     >
       {props.children}
