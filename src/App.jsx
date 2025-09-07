@@ -3,7 +3,9 @@ import Tasks from "./Tasks";
 import AddTasks from "./AddTasks";
 
 function App() {
-  const [tasks, setask] = useState(JSON.parse(localStorage.getItem("tasks")));
+  const [tasks, setask] = useState(
+    JSON.parse(localStorage.getItem("tasks")) || []
+  );
 
   function OnclickTask(taskId) {
     const newTasks = tasks.map((task) => {
@@ -38,8 +40,7 @@ function App() {
       );
       const data = await response.json();
       setask(data);
-    }
-    fetchData();*/
+    }*/
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
   return (
