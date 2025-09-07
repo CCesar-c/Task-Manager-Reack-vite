@@ -13,6 +13,7 @@ function AddTasks(props) {
         value={titulo}
         onChange={(event) => setTitulo(event.target.value)}
       />
+      <br />
       <Input
         type="text"
         placeholder="Digite una descripcion"
